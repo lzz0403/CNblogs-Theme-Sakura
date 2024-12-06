@@ -237,7 +237,7 @@
 			const blogTitle = $(this.cnblogs.blogTitle).find('h1 a').html();
 			const autherName = $(this.cnblogs.publicProfile).find('a:eq(0)').html();
 			let $title = $('head').find('title');
-			$title.html($title.html().replace(`故乡的樱花 | ${autherName}`, `${blogTitle}`));
+			$title.html($title.html().replace(`${autherName}`, `${blogTitle}`));
 
 			// Build a tags button on navbar.
 			let $navList = $(this.cnblogs.navList);
@@ -736,9 +736,8 @@
 			//博客logo
 			var title = '<div class="site-branding">' +
 					'<span class="logolink moe-mashiro">' +
-					'<a href="https://www.cnblogs.com/zouwangblog/" alt="故乡的樱花">' +
-					'<ruby><span class="sakuraso">ふるさとの桜</span><span class="no">の</span><span class="shironeko">雪</span>' +
-					'<rt class="chinese-font">故乡的樱花</rt></ruby></a></span>' +
+					'<a href="https://www.cnblogs.com/lzz0403" alt="">' +
+					'<ruby><span class="sakuraso">ふるさと</span><span class="no">の</span><span class="shironeko">桜</span>' +
 					'</div>'
 			$('body').prepend(title);
 
