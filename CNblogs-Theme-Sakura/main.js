@@ -51,7 +51,7 @@
 				},
 				topInfo: {
 					title: 'Hi,旅行者',
-					text: 'OWO你是不是在这里拉下来什么东西讷OWO.',
+					text: 'OWO你是不是在这里落下来什么东西讷OWO.',
 					github: "https://github.com/lzz0403",
 				}
 			};
