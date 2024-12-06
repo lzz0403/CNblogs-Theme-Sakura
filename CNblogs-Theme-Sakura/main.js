@@ -50,15 +50,9 @@
 					]
 				},
 				topInfo: {
-					title: 'Hi,Toretto',
-					text: 'You got to put the past behind you before you can move on.',
-					github: "",
-					weibo: "",
-					telegram: "",
-					music: "",
-					twitter: "",
-					zhihu: "",
-					mail: "",
+					title: 'Hi,旅行者',
+					text: 'OWO你是不是在这里拉下来什么东西讷OWO.',
+					github: "https://github.com/lzz0403",
 				}
 			};
 
@@ -159,9 +153,9 @@
 			document.addEventListener('visibilitychange', function () {
 				if (document.visibilityState == 'hidden') {
 					clearTimeout(time);
-					document.title = '桥豆麻袋(＃°Д°)';
+					document.title = '桥豆麻袋,怎么走了(＃°Д°)';
 				} else {
-					document.title = '你终于回来了(。・∀・)ノ';
+					document.title = '啊你终于回来了(。・∀・)ノ';
 					time = setTimeout(function () {
 						document.title = normar_title;
 					}, 3000);
@@ -243,7 +237,7 @@
 			const blogTitle = $(this.cnblogs.blogTitle).find('h1 a').html();
 			const autherName = $(this.cnblogs.publicProfile).find('a:eq(0)').html();
 			let $title = $('head').find('title');
-			$title.html($title.html().replace(`春原庄的雪 | ${autherName}`, `${blogTitle}`));
+			$title.html($title.html().replace(`故乡的樱花 | ${autherName}`, `${blogTitle}`));
 
 			// Build a tags button on navbar.
 			let $navList = $(this.cnblogs.navList);
@@ -273,7 +267,7 @@
 			});
 
 
-			$("#navList").append('<li><a id="blog_nav_myyoulian" class="menu" href="https://www.cnblogs.com/zouwangblog/articles/11177049.html">友链</a><i></i></li><li><a id="blog_nav_myzanshang" class="menu" href="https://www.cnblogs.com/zouwangblog/articles/11340077.html">赞赏</a><i></i></li><li><a id="blog_nav_myguanyu" class="menu" href="">关于</a><i></i></li>');
+			$("#navList").append('<li><a id="blog_nav_myyoulian" class="menu" href="http://www.cnup.top">友链</a><i></i></li><li><a id="blog_nav_myzanshang" class="menu" href="http://afdian.com">赞赏</a><i></i></li><li><a id="blog_nav_myguanyu" class="menu" href="">关于</a><i></i></li>');
 			//添加标签icon
 			$('#blog_nav_myhome').prepend('<i class="fa fa-fort-awesome" aria-hidden="true"></i>');
 			$('#blog_nav_contact').prepend('<i class="fa fa-address-book-o" aria-hidden="true"></i>');
@@ -285,9 +279,9 @@
 
 			//添加li内嵌ui
 			let guanyu = '<ul class="sub-menu">' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11157339.html "><i class="fa fa-meetup" aria-hidden="true"></i> 我？</a></li>' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11346906.html "><i class="fa fa-area-chart" aria-hidden="true"></i> 统计</a></li>' +
-					'<li><a href="https://www.cnblogs.com/zouwangblog/articles/11350777.html "><i class="fa fa-heartbeat" aria-hidden="true"></i> 监控</a></li>' +
+					'<li><a href=" "><i class="fa fa-meetup" aria-hidden="true"></i> 我？</a></li>' +
+					'<li><a href=" "><i class="fa fa-area-chart" aria-hidden="true"></i> 统计</a></li>' +
+					'<li><a href=" "><i class="fa fa-heartbeat" aria-hidden="true"></i> 监控</a></li>' +
 					'<li><a href="https://www.cnblogs.com/zouwangblog/p/11541835.html "><i class="iconfont icon-taohua" aria-hidden="true"></i> 主题</a></li>' +
 					'</ul>';
 			$('#blog_nav_myguanyu').after(guanyu);
@@ -742,9 +736,9 @@
 			//博客logo
 			var title = '<div class="site-branding">' +
 					'<span class="logolink moe-mashiro">' +
-					'<a href="https://www.cnblogs.com/zouwangblog/" alt="春原庄的雪">' +
-					'<ruby><span class="sakuraso">すのはら荘</span><span class="no">の</span><span class="shironeko">雪</span>' +
-					'<rt class="chinese-font">春原庄的雪</rt></ruby></a></span>' +
+					'<a href="https://www.cnblogs.com/zouwangblog/" alt="故乡的樱花">' +
+					'<ruby><span class="sakuraso">ふるさとの桜</span><span class="no">の</span><span class="shironeko">雪</span>' +
+					'<rt class="chinese-font">故乡的樱花</rt></ruby></a></span>' +
 					'</div>'
 			$('body').prepend(title);
 
@@ -827,12 +821,6 @@
 					`           <div class="top-social_v2">` +
 					`              <li id="bg-pre"><img class="flipx" src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808103709869-648245711.png"></li>` +
 					`              <li><a href="${config.github}" target="_blank" class="social-github" title="github"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095618459-218538626.png"></a></li>` +
-					`              <li><a href="${config.weibo}" target="_blank" class="social-sina" title="sina"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095623418-1617766229.png"></a></li>` +
-					`              <li><a href="${config.telegram}" target="_blank" class="social-lofter" title="telegram"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095628401-835828752.png"></a></li>` +
-					`              <li><a href="${config.music}" target="_blank" class="social-wangyiyun" title="CloudMusic"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095640330-1209750721.png"></a></li>` +
-					`              <li><a href="${config.twitter}" target="_blank" class="social-wangyiyun" title="Twitter"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095635213-701885869.png"></a></li>` +
-					`              <li><a href="${config.zhihu}" target="_blank" class="social-wangyiyun" title="Zhihu"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095650119-1882504549.png"></a></li>` +
-					`              <li><a href="${config.mail}" target="_blank" class="social-wangyiyun" title="E-mail"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808095613956-1350546638.png"></a></li>` +
 					`              <li id="bg-next"><img src="https://img2018.cnblogs.com/blog/1646268/201908/1646268-20190808103709869-648245711.png"></li>` +
 					`           </div>` +
 					`      </div>` +
